@@ -124,14 +124,14 @@ section{
     text-transform: none;
     color: var(--black);
 }
-.header .header-1 .search-form label{
+.header .header-1 .search-form button{
     font-size: 2.5rem;
     padding-right: 1.5rem;
     color: var(--black);
     cursor: pointer;
 }
 
-.header .header-1 .search-form label:hover{
+.header .header-1 .search-form button:hover{
     color: var(--orange);
 }
 
@@ -151,6 +151,11 @@ section{
 
 #search-btn{
     display: none;
+}
+
+form button{
+    border: none;
+    background-color: transparent;
 }
 
 .header .header-2{
@@ -183,10 +188,26 @@ section{
     color: #fff !important;
 }
 
-.fa-trash-can{
+.fa-trash-can, .fa-plus, .fa-minus{
     color: var(--orange);
+    cursor: pointer;
 }
 
+
+.main-products .buttons-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.main-products .buttons-div .plus-minus{
+    display: inline-block;
+}
+.main-products .col button{
+   font-size: 15px;
+   margin: 20px;
+}
 
 /* ********************************** */
 /*            bottomnavbar            */

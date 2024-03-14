@@ -1,3 +1,6 @@
+import './style.css'
+
+
 const products2 = document.querySelector('section.main-products')
 const plusBtn = document.querySelector('.fa-plus')
 const minusBtn = document.querySelector('.fa-minus')
@@ -18,7 +21,7 @@ const getValue = () =>{
   if(!input.trim()){
     alert('Input should not be empty')
   }else{
-    getAPiValue()
+    // getAPiValue()
   }
 }
 

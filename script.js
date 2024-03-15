@@ -1,42 +1,42 @@
-const products2 = document.querySelector('section.main-products')
-const plusBtn = document.querySelector('.fa-plus')
-const minusBtn = document.querySelector('.fa-minus')
-const form = document.querySelector('form')
+// const products2 = document.querySelector('section.main-products')
+// const plusBtn = document.querySelector('.fa-plus')
+// const minusBtn = document.querySelector('.fa-minus')
+// const form = document.querySelector('form')
 
-form.addEventListener('submit', (e) =>{
-  console.log(e);
-  e.preventDefault()
+// form.addEventListener('submit', (e) =>{
+//   console.log(e);
+//   e.preventDefault()
 
-  getValue()
+//   getValue()
 
-  e.target.reset()
-})
+//   e.target.reset()
+// })
 
-const getValue = () =>{
-  const input = document.querySelector('form input').value;
-  console.log(input);
-  if(!input.trim()){
-    alert('Input should not be empty')
-  }else{
-    getAPiValue()
-  }
-}
-
-
+// const getValue = () =>{
+//   const input = document.querySelector('form input').value;
+//   console.log(input);
+//   if(!input.trim()){
+//     alert('Input should not be empty')
+//   }else{
+//     getAPiValue()
+//   }
+// }
 
 
-products2.addEventListener(('click'),(e)=>{
-    // console.log('plus btn');
-    if(e.target.classList.contains('fa-plus')){
-        e.target.previousElementSibling.textContent++
 
-        calculatePrice(e.target)  
-    }else if(e.target.classList.contains('fa-minus')){
-        if(e.target.nextElementSibling.textContent>1){
-            e.target.nextElementSibling.textContent--
-        }
-    }
-})
+
+// products2.addEventListener(('click'),(e)=>{
+//     // console.log('plus btn');
+//     if(e.target.classList.contains('fa-plus')){
+//         e.target.previousElementSibling.textContent++
+
+//         calculatePrice(e.target)  
+//     }else if(e.target.classList.contains('fa-minus')){
+//         if(e.target.nextElementSibling.textContent>1){
+//             e.target.nextElementSibling.textContent--
+//         }
+//     }
+// })
 
 
 

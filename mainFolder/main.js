@@ -1,29 +1,21 @@
 import './style.css'
-
+import { searchProducts } from './src/searchProduct'
+// import { getProducts } from './src/getProducts'
 
 const products2 = document.querySelector('section.main-products')
-const plusBtn = document.querySelector('.fa-plus')
-const minusBtn = document.querySelector('.fa-minus')
+
 const form = document.querySelector('form')
 
 form.addEventListener('submit', (e) =>{
   console.log(e);
   e.preventDefault()
 
-  getValue()
+  // getProducts()
 
   e.target.reset()
 })
 
-const getValue = () =>{
-  const input = document.querySelector('form input').value;
-  console.log(input);
-  if(!input.trim()){
-    alert('Input should not be empty')
-  }else{
-    // getAPiValue()
-  }
-}
+
 
 
 

@@ -1,8 +1,8 @@
 import './style.css'
 import { searchProducts } from './src/searchProduct'
-// import { getProducts } from './src/getProducts'
 
-const products2 = document.querySelector('section.main-products')
+
+const productDIvs = document.querySelector('section.main-products')
 
 const form = document.querySelector('form')
 
@@ -17,10 +17,18 @@ form.addEventListener('submit', (e) =>{
 
 
 
+/* ********************************** */
+/*              addtocart             */
+/* ********************************** */
+
+document.getElementById('addToCard').addEventListener('click', function() {
+  var quantitySpan = document.querySelector('.quantity');
+  var currentQuantity = parseInt(quantitySpan.textContent);
+  quantitySpan.textContent = currentQuantity + 1;
+});
 
 
-
-products2.addEventListener(('click'),(e)=>{
+productDIvs.addEventListener(('click'),(e)=>{
     // console.log('plus btn');
     if(e.target.classList.contains('fa-plus')){
         e.target.previousElementSibling.textContent++
@@ -33,7 +41,58 @@ products2.addEventListener(('click'),(e)=>{
     }
 })
 
+/* ********************************** */
+/*             productsDiv            */
+/* ********************************** */
 
+function displayProducts(arr) {
+  productDivs.innerHTML = "";
+  arr.forEach((item) => {
+    const { id, title, description, price, image } = item;
+    const productDiv = document.createElement("div");
+    productDiv.classList.add("col");
+    productDiv.setAttribute("id", id);
+
+    productDiv.innerHTML =`
+    <div class="col">
+    <div class="card">
+      <img src="${image}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">${title}</h5>
+        <p class="card-text fs-3">${description}</p>
+        <div class="card-footer w-100 fw-bold d-flex justify-content-between gap-3">
+        <span>Price:</span><span>${price} $</span> </div>
+
+      <div class="buttons-div">
+        <div class="plus-minus text-center">
+          <i class="fa-solid fa-minus fs-3"></i> 
+          <span class="quantity fs-3">1</span>
+          <i class="fa-solid fa-plus fs-3"></i>
+        </div>
+        <i class="fa-solid fa-trash-can fs-3"></i>
+      </div>
+      <div class="button text-center">
+      <button type="button" class="btn btn-warning addToCard" id="">Add to Card</button>
+      <button type="button" class="btn btn-warning seeDetails" id="" >See Details</button>
+    </div>
+      </div>
+    </div>
+  </div>
+    
+    `
+
+
+    productDiv.addEventListener("click", (e) => {
+      if (e.target.classList.contains("addToCart")) {
+        console.log('add');
+        addToCart(item);
+      }else if (e.target.classList.contains("seeDetails")){
+        showModal(item)
+      }
+    });
+    productDivs.appendChild(productDiv);
+  });
+}
 
 
 

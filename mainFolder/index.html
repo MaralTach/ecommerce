@@ -24,11 +24,35 @@
       </form>
       <!-- <h3 id="current-time"></h3> -->
       <div class="icons position-relative">
+
+        <!-- ******************************* -->
+        <!--             ofcanvas             -->
+        <!-- ******************************* -->
+
+
+        <!-- ******************************* -->
+        <!--              sepet              -->
+        <!-- ******************************* -->
+<button class="btn btn-warning sepet" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sepet</a></button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div>
+        <!-- ******************************* -->
+        <!--          ofcanvas end           -->
+        <!-- ******************************* -->
+
+
         <!-- <div id="search-btn" class="fas fa-search"></div> -->
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fa-solid fa-bag-shopping " >
-        </a>
-        <a href="https://maraltach.github.io/id-validator/" target="_blank"> <div id="login-btn" class="fas fa-user"></div></a>
+        <!-- <a href="#" class="fas fa-heart"></a> -->
+       
+       
       </div>
     </div>
 
@@ -73,7 +97,7 @@
           <img src="..." class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text fs-3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text fs-3">Description</p>
           <div class="buttons-div">
             <div class="plus-minus text-center">
               <i class="fa-solid fa-minus fs-3"></i> 
@@ -82,262 +106,53 @@
             </div>
             <i class="fa-solid fa-trash-can fs-3"></i>
           </div>
+
+          <div class="card-footer w-100 fw-bold d-flex justify-content-between gap-3">
+          <span>Price: 1239</span><span>price $</span> </div>
+
           <div class="button text-center">
+
           <button type="button" class="btn btn-warning 1" id="addToCard">Add to Card</button>
-          <button type="button" class="btn btn-warning 2" id="seeDetails" >See Details</button>
-        </div>
-          </div>
-        </div>
-      </div>
+          <!-- <button type="button" class="btn btn-warning 2" id="seeDetails" >See Details</button> -->
 
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text fs-3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="buttons-div">
-            <div class="plus-minus text-center">
-              <i class="fa-solid fa-minus fs-3"></i> 
-              <span class="quantity fs-3">1</span>
-              <i class="fa-solid fa-plus fs-3"></i>
-            </div>
-            <i class="fa-solid fa-trash-can fs-3"></i>
-          </div>
-          <div class="button text-center">
-          <button type="button" class="btn btn-warning" id="addToCard">Add to Card</button>
-          <button type="button" class="btn btn-warning" id="seeDetails" >See Details</button>
-        </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text fs-3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="buttons-div">
-            <div class="plus-minus text-center">
-              <i class="fa-solid fa-minus fs-3"></i> 
-              <span class="quantity fs-3">1</span>
-              <i class="fa-solid fa-plus fs-3"></i>
-            </div>
-            <i class="fa-solid fa-trash-can fs-3"></i>
-          </div>
-          <div class="button text-center">
-          <button type="button" class="btn btn-warning" id="addToCard">Add to Card</button>
-          <button type="button" class="btn btn-warning" id="seeDetails" >See Details</button>
-        </div>
-          </div>
-        </div>
-      </div>
+          <!-- ******************************* -->
+          <!--           modalTitle            -->
+          <!-- ******************************* -->
 
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text fs-3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="buttons-div">
-            <div class="plus-minus text-center">
-              <i class="fa-solid fa-minus fs-3"></i> 
-              <span class="quantity fs-3">1</span>
-              <i class="fa-solid fa-plus fs-3"></i>
-            </div>
-            <i class="fa-solid fa-trash-can fs-3"></i>
-          </div>
-          <div class="button text-center">
-          <button type="button" class="btn btn-warning" id="addToCard">Add to Card</button>
-          <button type="button" class="btn btn-warning" id="seeDetails" >See Details</button>
-        </div>
-          </div>
-        </div>
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  See Details
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Product Description</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text fs-3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="buttons-div">
-            <div class="plus-minus text-center">
-              <i class="fa-solid fa-minus fs-3"></i> 
-              <span class="quantity fs-3">1</span>
-              <i class="fa-solid fa-plus fs-3"></i>
-            </div>
-            <i class="fa-solid fa-trash-can fs-3"></i>
-          </div>
-          <div class="button text-center">
-          <button type="button" class="btn btn-warning" id="addToCard">Add to Card</button>
-          <button type="button" class="btn btn-warning" id="seeDetails" >See Details</button>
-        </div>
-          </div>
-        </div>
+      <div class="modal-body">
+        ...
       </div>
-
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text fs-3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="buttons-div">
-            <div class="plus-minus text-center">
-              <i class="fa-solid fa-minus fs-3"></i> 
-              <span class="quantity fs-3">1</span>
-              <i class="fa-solid fa-plus fs-3"></i>
-            </div>
-            <i class="fa-solid fa-trash-can fs-3"></i>
-          </div>
-          <div class="button text-center">
-          <button type="button" class="btn btn-warning" id="addToCard">Add to Card</button>
-          <button type="button" class="btn btn-warning" id="seeDetails" >See Details</button>
-        </div>
-          </div>
-        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Understood</button>
       </div>
-
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text fs-3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="buttons-div">
-            <div class="plus-minus text-center">
-              <i class="fa-solid fa-minus fs-3"></i> 
-              <span class="quantity fs-3">1</span>
-              <i class="fa-solid fa-plus fs-3"></i>
-            </div>
-            <i class="fa-solid fa-trash-can fs-3"></i>
-          </div>
-          <div class="button text-center">
-          <button type="button" class="btn btn-warning" id="addToCard">Add to Card</button>
-          <button type="button" class="btn btn-warning" id="seeDetails" >See Details</button>
-        </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col">
-        <div class="card">
-          <img src="https://m.media-amazon.com/images/I/51mgtjVbhgL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text fs-3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="buttons-div">
-            <div class="plus-minus text-center">
-              <i class="fa-solid fa-minus fs-3"></i> 
-              <span class="quantity fs-3">1</span>
-              <i class="fa-solid fa-plus fs-3"></i>
-            </div>
-            <i class="fa-solid fa-trash-can fs-3"></i>
-          </div>
-          <div class="button text-center">
-          <button type="button" class="btn btn-warning" id="addToCard">Add to Card</button>
-          <button type="button" class="btn btn-warning" id="seeDetails" >See Details</button>
-        </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text fs-3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="buttons-div">
-            <div class="plus-minus text-center">
-              <i class="fa-solid fa-minus fs-3"></i> 
-              <span class="quantity fs-3">1</span>
-              <i class="fa-solid fa-plus fs-3"></i>
-            </div>
-            <i class="fa-solid fa-trash-can fs-3"></i>
-          </div>
-          <div class="button text-center">
-          <button type="button" class="btn btn-warning" id="addToCard">Add to Card</button>
-          <button type="button" class="btn btn-warning" id="seeDetails" >See Details</button>
-        </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text fs-3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="buttons-div">
-            <div class="plus-minus text-center">
-              <i class="fa-solid fa-minus fs-3"></i> 
-              <span class="quantity fs-3">1</span>
-              <i class="fa-solid fa-plus fs-3"></i>
-            </div>
-            <i class="fa-solid fa-trash-can fs-3"></i>
-          </div>
-          <div class="button text-center">
-          <button type="button" class="btn btn-warning" id="addToCard">Add to Card</button>
-          <button type="button" class="btn btn-warning" id="seeDetails" >See Details</button>
-        </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text fs-3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="buttons-div">
-            <div class="plus-minus text-center">
-              <i class="fa-solid fa-minus fs-3"></i> 
-              <span class="quantity fs-3">1</span>
-              <i class="fa-solid fa-plus fs-3"></i>
-            </div>
-            <i class="fa-solid fa-trash-can fs-3"></i>
-          </div>
-          <div class="button text-center">
-          <button type="button" class="btn btn-warning" id="addToCard">Add to Card</button>
-          <button type="button" class="btn btn-warning" id="seeDetails" >See Details</button>
-        </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text fs-3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="buttons-div">
-            <div class="plus-minus text-center">
-              <i class="fa-solid fa-minus fs-3"></i> 
-              <span class="quantity fs-3">1</span>
-              <i class="fa-solid fa-plus fs-3"></i>
-            </div>
-            <i class="fa-solid fa-trash-can fs-3"></i>
-          </div>
-          <div class="button text-center">
-          <button type="button" class="btn btn-warning" id="addToCard">Add to Card</button>
-          <button type="button" class="btn btn-warning" id="seeDetails" >See Details</button>
-        </div>
-          </div>
-        </div>
-      </div>
-
+    </div>
   </div>
-  </section>
+</div>
 
+        </div>
+          </div>
+        </div>
+      </div>
+
+  
    
-
+<!-- ******************************* -->
+<!--             footer              -->
+<!-- ******************************* -->
       
 
 <section class="footer">
